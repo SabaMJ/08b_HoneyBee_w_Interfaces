@@ -1,5 +1,10 @@
 package com.cc.java;
 
+
+import com.cc.java.bees.*;
+import com.cc.java.birds.Bird;
+//import com.cc.java.interfaces.*;
+
 public class App {
     
     public static void main(String[] args) {
@@ -26,6 +31,12 @@ public class App {
     private static void pollObj(HoneyBee bee) {
         output(bee.doYourJob());
         output(bee.fly());
+        output("------------");
+    }
+
+    private static void pollObj(Bird bird) {
+        output(bird.hasFeathers());
+        output(bird.fly());
         output("------------");
     }
 
